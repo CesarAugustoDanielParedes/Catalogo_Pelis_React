@@ -1,17 +1,22 @@
 import NavbarPelis from './components/NavbarPelis';
+import { useState } from 'react';
 import './App.css';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 
+
 function App() {
+  const [filtro, setFiltro] = useState("");
+  // Manejar el estado del filtro de búsqueda
+
   return (
     <div className="App">
-      <NavbarPelis />
-      <Home />
-      <Footer /> {/* 👈 Esto elimina el warning */}
+      <NavbarPelis onBuscar={setFiltro} /> 
+      <Home filtro={filtro} />
+      <Footer /> 
     </div>
   );
 }
 
-export default App;
 
+export default App;

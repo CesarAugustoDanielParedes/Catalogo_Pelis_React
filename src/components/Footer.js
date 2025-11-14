@@ -9,7 +9,7 @@ function Footer() {
                 <p className="mb-1">
                     Catalogo de Pelis usando API por <span className="fw-bold">Paredes P. César Augusto Daniel</span>
                 </p>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-info text-decoration-none">
+                <a href="https://github.com/CesarAugustoDanielParedes/Catalogo_Pelis_React/tree/main" target="_blank" rel="noopener noreferrer" className="text-info text-decoration-none">
                     <FaGithub className="me-1" /> Ver en GitHub
                 </a>
             </Container>
